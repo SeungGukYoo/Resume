@@ -12,6 +12,9 @@ ul,ol,li{
 a{
 	text-decoration: none;
 }
+body{
+	background: rgb(244,244,244);
+}
 `;
 
 export default GlobalStyle;

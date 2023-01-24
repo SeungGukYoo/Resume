@@ -7,6 +7,7 @@ const InfoContainer = styled.div`
   padding: 40px 80px;
   background-color: rgb(250, 232, 216);
   border-top-left-radius: 50px;
+
   margin-bottom: 40px;
 
   h1 {
@@ -25,11 +26,43 @@ const InfoContainer = styled.div`
   }
   > div {
     p {
+      display: flex;
+      gap: 20px;
+      b {
+        font-size: 22px;
+      }
+      font-size: 20px;
       letter-spacing: 1px;
       font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
       margin-bottom: 5px;
-
-      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    justify-content: space-between;
+    border-bottom-right-radius: 50px;
+    > div {
+      margin-right: 50px;
+      margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 20px 40px;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 14px;
+      &::after {
+        margin-top: 10px;
+        height: 2px;
+      }
+    }
+    > div {
+      margin: 0;
+      p {
+        b {
+          font-size: 15px;
+        }
+        font-size: 15px;
+      }
     }
   }
 `;
@@ -39,11 +72,21 @@ function Info() {
     <InfoContainer>
       <h1>Informtaion</h1>
       <div>
-        <p>이름: 유승국</p>
-        <p>나이: 26</p>
-        <p>전공: 컴퓨터공학과</p>
-        <p>MBTI: ISTJ</p>
-        <p>취미: 여행</p>
+        <p>
+          <b>이름</b>유승국
+        </p>
+        <p>
+          <b>나이</b>26
+        </p>
+        <p>
+          <b>학력</b>한남대학교
+        </p>
+        <p>
+          <b>전공</b>컴퓨터공학과
+        </p>
+        <p>
+          <b>경력</b>신입
+        </p>
       </div>
     </InfoContainer>
   );

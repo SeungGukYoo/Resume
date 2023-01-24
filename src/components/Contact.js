@@ -29,6 +29,7 @@ const ContactContainer = styled.div`
       }
     }
     h2 {
+      vertical-align: middle;
       margin-bottom: 5px;
       font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
       font-size: 22px;
@@ -38,6 +39,39 @@ const ContactContainer = styled.div`
       font-size: 20px;
       font-weight: 100;
       cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    border-bottom-left-radius: 50px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 20px 40px;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 14px;
+      &::after {
+        margin-top: 10px;
+        height: 2px;
+      }
+    }
+    div {
+      display: block;
+      margin-bottom: 10px;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+        font-size: 15px;
+        font-weight: 100;
+        cursor: pointer;
+      }
     }
   }
 `;
@@ -66,16 +100,6 @@ function Contact() {
           }
         >
           Notion 바로가기
-        </p>
-      </div>
-      <div>
-        <h2>GIT</h2>
-        <p
-          onClick={() =>
-            window.open('https://www.notion.so/8f5367843300462da66df8c5e0944d92', '_blank')
-          }
-        >
-          Git 바로가기
         </p>
       </div>
     </ContactContainer>
