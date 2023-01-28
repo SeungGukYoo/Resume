@@ -79,13 +79,13 @@ function Info() {
           <b>나이</b>26
         </p>
         <p>
+          <b>거주지</b>대전
+        </p>
+        <p>
           <b>학력</b>한남대학교
         </p>
         <p>
           <b>전공</b>컴퓨터공학과
-        </p>
-        <p>
-          <b>경력</b>신입
         </p>
       </div>
     </InfoContainer>

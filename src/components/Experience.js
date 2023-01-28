@@ -35,6 +35,7 @@ const ExperienceContainer = styled.div`
           font-weight: bold;
           color: rgb(129, 128, 123);
           font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+          cursor: pointer;
         }
       }
       &:nth-of-type(2) {
@@ -46,6 +47,7 @@ const ExperienceContainer = styled.div`
           font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
           color: rgb(45, 42, 41);
           vertical-align: middle;
+          cursor: pointer;
         }
         p {
           padding-top: 5px;
@@ -53,6 +55,14 @@ const ExperienceContainer = styled.div`
           font-size: 15px;
           color: rgb(129, 128, 123);
           font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+          &:nth-of-type(2) {
+            display: inline;
+            color: black;
+            padding-top: 7px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -111,11 +121,15 @@ function Experience() {
       <h1>Experience</h1>
 
       <article>
-        <div onClick={() => moveSite('https://seunggukyoo.github.io/Clone_Company_Homepage/')}>
-          <p>Asan</p>
+        <div>
+          <p onClick={() => moveSite('https://seunggukyoo.github.io/Clone_Company_Homepage/')}>
+            Asan 바로가기
+          </p>
         </div>
-        <div onClick={() => moveSite('https://github.com/SeungGukYoo/Clone_Company_Homepage')}>
-          <h2>Html,Css,Js를 활용한 반응형 기업형 홈페이지</h2>
+        <div>
+          <h2 onClick={() => moveSite('https://github.com/SeungGukYoo/Clone_Company_Homepage')}>
+            Html,Css,Js를 활용한 반응형 기업형 홈페이지 GIT 저장소
+          </h2>
           <p>
             Asan씨앤씨 홈페이지를 기업형 레이아웃에 맞게 약간 변형하여 제작하였습니다. <br />
             반응형으로 제작하였으며, 웹 접근성을 신경써가며 제작하였습니다.
@@ -123,28 +137,43 @@ function Experience() {
         </div>
       </article>
       <article>
-        <div onClick={() => moveSite('https://seunggukyoo.github.io/react_homepage/#/')}>
-          <p>vipp</p>
+        <div>
+          <p onClick={() => moveSite('https://seunggukyoo.github.io/react_homepage/#/')}>
+            vipp 바로가기
+          </p>
         </div>
-        <div onClick={() => moveSite('https://github.com/SeungGukYoo/react_homepage')}>
-          <h2>React를 활용한 반응형 기업형 홈페이지</h2>
-          <p>
+        <div>
+          <h2>React를 활용한 반응형 기업형 홈페이지 GIT 저장소</h2>
+          <p onClick={() => moveSite('https://github.com/SeungGukYoo/react_homepage')}>
             리액트를 사용하여 제작한 반응형 기업형 홈페이지입니다. <br />
-            해당 프로젝트에서는 Youtube와 Flickr를 사용하여 콘텐츠를 구성하였으며, Redux-saga를
-            적용하여 데이터를 전역으로 관리한 프로젝트입니다.
+            해당 프로젝트에서는 Youtube와 Flickr,Kakao API를 사용하여 콘텐츠를 구성하였으며,
+            Redux-saga를 적용하여 데이터를 전역으로 관리한 프로젝트입니다.
+          </p>
+          <p
+            onClick={() =>
+              moveSite(
+                'https://drive.google.com/file/d/1eEXaGSUReu6T2pkZspiQd4pU3_sY_i7i/view?usp=sharing'
+              )
+            }
+          >
+            작업 과정 다운로드
           </p>
         </div>
       </article>
       <article>
-        <div
-          onClick={() => moveSite('https://github.com/SeungGukYoo/react-node-study/tree/master')}
-        >
-          <p>CRUD 게시판</p>
+        <div>
+          <p
+            onClick={() => moveSite('https://github.com/SeungGukYoo/react-node-study/tree/master')}
+          >
+            CRUD 게시판
+          </p>
         </div>
-        <div
-          onClick={() => moveSite('https://github.com/SeungGukYoo/react-node-study/tree/master')}
-        >
-          <h2>React와 MongooDB를 활용한 게시판</h2>
+        <div>
+          <h2
+            onClick={() => moveSite('https://github.com/SeungGukYoo/react-node-study/tree/master')}
+          >
+            React와 MongooDB를 활용한 게시판 GIT 저장소
+          </h2>
           <p>
             리액트에 MongooDB를 사용하여 게시판을 구현한 프로젝트입니다. <br />
             MongooDB를 통해 프론트엔드와 백엔드를 직접 구현하였으며, 이외에도 Firebase를 통해

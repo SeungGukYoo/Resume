@@ -109,6 +109,13 @@ const InfoContainer = styled.article`
     font-size: 16px;
     color: #666;
     line-height: 24px;
+    span {
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      color: black;
+      cursor: pointer;
+    }
   }
   @media screen and (max-width: 1200px) {
     width: 100%;
@@ -118,6 +125,9 @@ const InfoContainer = styled.article`
     justify-content: center;
     align-items: center;
     & > .profile {
+      margin-right: auto;
+    }
+    p {
       margin-right: auto;
     }
     h2 {
@@ -147,13 +157,20 @@ function Header() {
           <span className='profile'>Profile</span>
           <p>
             React, NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
-            빠르게 변화하는 프론트엔드 기술들을 파악하기 위해 여러가지 커뮤니티를 통해 소식을 접하고
-            있으며, <br />
-            관심이 있는 기술이 있다면 서슴치 않고 배우고자 합니다.
+            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 매꾸기위해 포기하지 않고
+            노력하고 있습니다.
             <br />
-            현재에는 부족한 인터렉션 기법을 인프런과 여러가지 커뮤니티를 통해 공부하고있으며,
-            <br /> 알게된 내용중 누군가에게 필요할 것같다고 생각이 드는 것이 있다면 블로그에
-            작성하고 있습니다.
+            문제를 직접 경험하고, 해결하며 성장하고 싶은 개발자가 되고싶습니다. <br />
+            <span
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/file/d/1OAKI0UIbbbnipWcw43IuPPo1OIarzVlq/view?usp=sharing',
+                  '_blank'
+                )
+              }
+            >
+              자기소개서 다운로드
+            </span>
           </p>
         </InfoContainer>
       </div>
