@@ -28,6 +28,16 @@ const ContactContainer = styled.div`
         cursor: default;
       }
     }
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      P {
+        cursor: pointer;
+        color: rgb(129, 128, 123);
+        &:hover {
+          color: black;
+        }
+      }
+    }
     h2 {
       vertical-align: middle;
       margin-bottom: 5px;
@@ -38,7 +48,6 @@ const ContactContainer = styled.div`
       font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
       font-size: 20px;
       font-weight: 100;
-      cursor: pointer;
     }
   }
   @media screen and (max-width: 1200px) {
@@ -94,13 +103,7 @@ function Contact() {
       </div>
       <div>
         <h2>Notion</h2>
-        <p
-          onClick={() =>
-            window.open('https://www.notion.so/8f5367843300462da66df8c5e0944d92', '_blank')
-          }
-        >
-          Notion 바로가기
-        </p>
+        <p onClick={() => window.open('https://www.notion.so/8f5367843300462da66df8c5e0944d92', '_blank')}>Notion 바로가기</p>
       </div>
     </ContactContainer>
   );
