@@ -161,7 +161,7 @@ function Header() {
       <div className="inner">
         <ImgContainer>
           <div>
-            <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="profile" />
+            <img src={`${process.env.PUBLIC_URL}/profile.jpeg`} alt="profile" />
           </div>
         </ImgContainer>
         <InfoContainer>
