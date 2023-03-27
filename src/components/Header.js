@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const HeaderContainer = styled.header`
   width: 100%;
@@ -23,13 +23,14 @@ const HeaderContainer = styled.header`
 `;
 
 const ImgContainer = styled.article`
-  width: 30%;
-  height: 100%;
-
+  height: 400px;
+  width: 400px;
   > div {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
     > img {
       width: 100%;
       height: 100%;
@@ -51,7 +52,8 @@ const ImgContainer = styled.article`
     }
   }
   @media screen and (max-width: 600px) {
-    width: 50%;
+    height: 250px;
+    width: 250px;
     > div {
       > img {
         width: 100%;
@@ -77,7 +79,7 @@ const InfoContainer = styled.article`
     font-size: 50px;
     margin-bottom: 12px;
     &::after {
-      content: '입니다.';
+      content: "입니다.";
       font-size: 17px;
       margin-left: 10px;
       color: #999;
@@ -98,7 +100,7 @@ const InfoContainer = styled.article`
     &::after {
       margin-top: 3px;
       display: block;
-      content: '';
+      content: "";
       height: 2px;
       width: 40px;
       background-color: navy;
@@ -156,23 +158,32 @@ const InfoContainer = styled.article`
 function Header() {
   return (
     <HeaderContainer>
-      <div className='inner'>
+      <div className="inner">
         <ImgContainer>
           <div>
-            <img src={`${process.env.PUBLIC_URL}/dummy.jpg`} alt='' />
+            <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="profile" />
           </div>
         </ImgContainer>
         <InfoContainer>
-          <span className='nameStyle'>저의 이름은</span>
+          <span className="nameStyle">저의 이름은</span>
           <h1>유승국</h1>
           <h2>Frontend Developer</h2>
-          <span className='profile'>Profile</span>
+          <span className="profile">Profile</span>
           <p>
             React, NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
             제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 매꾸기위해 포기하지 않고 노력하고 있습니다.
             <br />
             문제를 직접 경험하고, 해결하며 성장하고 싶은 개발자가 되고싶습니다. <br />
-            <span onClick={() => window.open('https://drive.google.com/file/d/1OAKI0UIbbbnipWcw43IuPPo1OIarzVlq/view?usp=sharing', '_blank')}>자기소개서 다운로드</span>
+            <span
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1OAKI0UIbbbnipWcw43IuPPo1OIarzVlq/view?usp=sharing",
+                  "_blank"
+                )
+              }
+            >
+              자기소개서 다운로드
+            </span>
           </p>
         </InfoContainer>
       </div>
