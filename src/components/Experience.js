@@ -53,6 +53,7 @@ const ExperienceContainer = styled.div`
       &:nth-of-type(1) {
         width: 25%;
         flex: 1;
+
         p {
           display: inline-block;
           padding-top: 5px;
@@ -63,6 +64,10 @@ const ExperienceContainer = styled.div`
           &:hover {
             color: black;
           }
+        }
+        .noneClick {
+          cursor: default;
+          color: black;
         }
       }
       &:nth-of-type(2) {
@@ -101,6 +106,9 @@ const ExperienceContainer = styled.div`
               color: white;
             }
           }
+        }
+        .caution {
+          color: black;
         }
       }
     }
@@ -200,22 +208,23 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p onClick={() => moveSite("https://github.com/SeungGukYoo/react-node-study/tree/master")}>CRUD 게시판</p>
+          <p className="noneClick">CRUD 게시판</p>
         </div>
         <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/react-node-study/tree/master")}>
-            React와 MongooDB를 활용한 게시판 GIT 저장소
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Next_fullstack_clone")}>
+            NextJS와 MySQL을 활용한 게시판 GIT 저장소
           </h2>
           <p>
-            리액트에 MongooDB를 사용하여 게시판을 구현한 프로젝트입니다. <br />
-            MongooDB를 통해 프론트엔드와 백엔드를 직접 구현하였으며, 이외에도 Firebase를 통해 회원가입을 적용한
-            프로젝트입니다.
+            NextJS와 MySQL를 사용하여 게시판을 구현한 프로젝트입니다. <br />
+            NextJS에 TailwindCSS를 처음으로 적용해보았으며, Redux-saga를 사용하여 프론트엔드의 데이터를 전역으로
+            관리하였습니다. <br />
+            백엔드는 NodeJs를 사용하였으며, MySQL을 사용하여 데이터를 관리해보았습니다. <br />
           </p>
         </div>
       </article>
       <article>
         <div>
-          <p onClick={() => moveSite("https://netflix-wtih-next13-typescript-git-main-seunggukyoo.vercel.app/login")}>
+          <p onClick={() => moveSite("https://netflix-wtih-next13-typescript-23pgxen81-seunggukyoo.vercel.app")}>
             Netflix 바로가기
           </p>
         </div>
@@ -226,7 +235,11 @@ function Experience() {
           <p>
             Typescript와 NextJS 13버전을 사용하여 제작한 Netflix 사이트입니다. <br />
             Recoil을 사용하여 영화데이터와 모달 상태를 전역으로 관리해본 프로젝트입니다. <br />
-            firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다.
+            firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다. <br />
+            <span className="caution">
+              2023년 3월 28일 기준 이전에는 문제 없던 배경 이미지를 갑자기 불러오지 못하는 현상이 발생하였습니다. 이외의
+              기능은 정상 작동합니다.
+            </span>
           </p>
           <p
             onClick={() =>
