@@ -186,7 +186,7 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p onClick={() => moveSite("https://seunggukyoo.github.io/react_homepage/#/")}>vipp 바로가기</p>
+          <p onClick={() => moveSite("https://seunggukyoo.github.io/react_homepage/#/department")}>vipp 바로가기</p>
         </div>
         <div>
           <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/react_homepage")}>
@@ -195,7 +195,13 @@ function Experience() {
           <p>
             리액트를 사용하여 제작한 반응형 기업형 홈페이지입니다. <br />
             해당 프로젝트에서는 Youtube와 Flickr,Kakao API를 사용하여 콘텐츠를 구성하였으며, Redux-saga를 적용하여
-            데이터를 전역으로 관리한 프로젝트입니다.
+            데이터를 전역으로 관리한 프로젝트입니다. <br />
+            <span className="caution">
+              2023년 3월 30일 기준 코드상에 문제는 없지만 Flickr API 자체에 오류로 인하여 간헐적으로 데이터를 불러오지
+              못하는 일이 발생하고 있습니다. <br />
+              데이터를 불러오지 못해 발생하는 오류로 인하여 홈페이지의 주소는 다른 페이지의 주소로 연결해놓은
+              상태입니다.
+            </span>
           </p>
           <p
             onClick={() =>
@@ -237,8 +243,8 @@ function Experience() {
             Recoil을 사용하여 영화데이터와 모달 상태를 전역으로 관리해본 프로젝트입니다. <br />
             firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다. <br />
             <span className="caution">
-              2023년 3월 28일 기준 이전에는 문제 없던 배경 이미지를 갑자기 불러오지 못하는 현상이 발생하였습니다. 이외의
-              기능은 정상 작동합니다.
+              2023년 3월 28일 기준 배포후 배경 이미지를 불러오지 못하는 현상이 발생하였습니다. <br />
+              이외의 기능은 정상적으로 동작중입니다.
             </span>
           </p>
           <p
