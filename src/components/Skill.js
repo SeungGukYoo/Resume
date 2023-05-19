@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const SkillContainer = styled.div`
   background-color: rgb(250, 232, 216);
@@ -10,11 +10,11 @@ const SkillContainer = styled.div`
   h1 {
     font-size: 35px;
     margin-bottom: 25px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
     letter-spacing: 1px;
     &::after {
       margin-top: 20px;
-      content: '';
+      content: "";
       display: block;
       width: 50px;
       height: 3px;
@@ -51,7 +51,7 @@ const SkillBox = styled.div`
       font-size: 20px;
       color: rgb(129, 128, 123);
       margin-bottom: 10px;
-      font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+      font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
       font-weight: normal;
     }
     > ul {
@@ -59,7 +59,7 @@ const SkillBox = styled.div`
       flex-wrap: wrap;
       flex-direction: column;
       li {
-        font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+        font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
         font-size: 14px;
       }
     }
@@ -93,7 +93,7 @@ const SkillBox = styled.div`
         margin-top: 10px;
         justify-content: space-between;
         li {
-          font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+          font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
           font-size: 17px;
         }
       }
@@ -123,7 +123,7 @@ const SkillBox = styled.div`
         margin-top: 5px;
         justify-content: space-between;
         li {
-          font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+          font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
           font-size: 15px;
         }
       }

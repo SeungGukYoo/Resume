@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const ContactContainer = styled.div`
   background-color: rgb(249, 230, 231);
@@ -9,11 +9,11 @@ const ContactContainer = styled.div`
   h1 {
     font-size: 35px;
     margin-bottom: 25px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
     letter-spacing: 1px;
     &::after {
       margin-top: 20px;
-      content: '';
+      content: "";
       display: block;
       width: 50px;
       height: 3px;
@@ -41,11 +41,11 @@ const ContactContainer = styled.div`
     h2 {
       vertical-align: middle;
       margin-bottom: 5px;
-      font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+      font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
       font-size: 22px;
     }
     p {
-      font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+      font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
       font-size: 20px;
       font-weight: 100;
     }
@@ -76,7 +76,7 @@ const ContactContainer = styled.div`
         font-size: 18px;
       }
       p {
-        font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+        font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
         font-size: 15px;
         font-weight: 100;
         cursor: pointer;
@@ -99,11 +99,13 @@ function Contact() {
       </div>
       <div>
         <h2>Blog</h2>
-        <p onClick={() => window.open(' https://9uk-e.tistory.com/', '_blank')}>블로그 바로가기</p>
+        <p onClick={() => window.open(" https://9uk-e.tistory.com/", "_blank")}>블로그 바로가기</p>
       </div>
       <div>
         <h2>Notion</h2>
-        <p onClick={() => window.open('https://www.notion.so/8f5367843300462da66df8c5e0944d92', '_blank')}>Notion 바로가기</p>
+        <p onClick={() => window.open("https://www.notion.so/8f5367843300462da66df8c5e0944d92", "_blank")}>
+          Notion 바로가기
+        </p>
       </div>
     </ContactContainer>
   );

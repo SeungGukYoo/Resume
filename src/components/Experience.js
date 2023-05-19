@@ -34,7 +34,7 @@ const ExperienceContainer = styled.div`
   h1 {
     font-size: 35px;
     margin-bottom: 25px;
-    font-family: "Source Code Pro", monospace;
+    font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
     letter-spacing: 1px;
     &::after {
       margin-top: 20px;
@@ -180,7 +180,7 @@ function Experience() {
           </h2>
           <p>
             Asan씨앤씨 홈페이지를 기업형 레이아웃에 맞게 약간 변형하여 제작하였습니다. <br />
-            반응형으로 제작하였으며, 웹 접근성을 신경써가며 제작하였습니다.
+            반응형으로 제작하였으며, 웹 접근성을 신경써 가며 제작하였습니다.
           </p>
         </div>
       </article>
@@ -194,7 +194,7 @@ function Experience() {
           </h2>
           <p>
             리액트를 사용하여 제작한 반응형 기업형 홈페이지입니다. <br />
-            해당 프로젝트에서는 Youtube와 Flickr,Kakao API를 사용하여 콘텐츠를 구성하였으며, Redux-saga를 적용하여
+            해당 프로젝트에서는 Youtube와 Flickr, Kakao API를 사용하여 콘텐츠를 구성하였으며, Redux-saga를 적용하여
             데이터를 전역으로 관리한 프로젝트입니다. <br />
             <span className="caution">
               2023년 3월 30일 기준 코드상에 문제는 없지만 Flickr API 자체에 오류로 인하여 간헐적으로 데이터를 불러오지
@@ -221,10 +221,10 @@ function Experience() {
             NextJS와 MySQL을 활용한 게시판 GIT 저장소
           </h2>
           <p>
-            NextJS와 MySQL를 사용하여 게시판을 구현한 프로젝트입니다. <br />
-            NextJS에 TailwindCSS를 처음으로 적용해보았으며, Redux-saga를 사용하여 프론트엔드의 데이터를 전역으로
+            NextJS와 Node.js, MySQL를 사용하여 게시판을 구현한 프로젝트입니다. <br />
+            NextJS에 TailwindCSS를 처음으로 적용해 보았으며, Redux-saga를 사용하여 프론트엔드의 데이터를 전역으로
             관리하였습니다. <br />
-            백엔드는 NodeJs를 사용하였으며, MySQL을 사용하여 데이터를 관리해보았습니다. <br />
+            백엔드는 NodeJs를 사용하였으며, MySQL을 사용하여 데이터를 관리해 보았습니다. <br />
           </p>
         </div>
       </article>
@@ -240,11 +240,11 @@ function Experience() {
           </h2>
           <p>
             Typescript와 NextJS 13버전을 사용하여 제작한 Netflix 사이트입니다. <br />
-            Recoil을 사용하여 영화데이터와 모달 상태를 전역으로 관리해본 프로젝트입니다. <br />
+            Recoil을 사용하여 영화 데이터와 모달 상태를 전역으로 관리해 본 프로젝트입니다. <br />
             firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다. <br />
             <span className="caution">
               2023년 5월 18일 보안 오류로 인하여 홈페이지에 들어가는 것이 불가능합니다.
-              <br /> Git에 들어가 다운로드하는 것을 권장드립니다. 양해부탁드립니다. <br />
+              <br /> Git에 들어가 다운로드하는 것을 권장 드립니다. 양해 부탁드립니다. <br />
             </span>
           </p>
           <p
@@ -266,9 +266,9 @@ function Experience() {
           </h2>
           <p>
             Typescript와 NextJS 13버전을 사용하여 제작한 ChatGPT 사이트입니다. <br />
-            최근에 큰 이슈를 몰고온 ChatGPT를 사용하여 채팅창을 만들어보았습니다. <br />
-            NextAuth를 사용하여 로그인, 로그아웃을 구현해보았으며, firebase를 사용하여 실시간 데이터를 저장해
-            놓았습니다.
+            Open AI를 사용하여 채팅창을 만들어보았으며, 여러 가지 AI모델을 선택하여 채팅방을 만들 수 있습니다. <br />
+            NextAuth를 사용하여 로그인, 로그아웃을 구현하였으며, firebase를 사용하여 실시간 데이터를 저장하였기에
+            언제든지 이전 채팅 내용을 확인할 수 있습니다.
           </p>
         </div>
       </article>

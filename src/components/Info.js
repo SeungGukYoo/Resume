@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const InfoContainer = styled.div`
   width: 100%;
@@ -13,11 +13,11 @@ const InfoContainer = styled.div`
   h1 {
     font-size: 35px;
     margin-bottom: 25px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
     letter-spacing: 1px;
     &::after {
       margin-top: 20px;
-      content: '';
+      content: "";
       display: block;
       width: 50px;
       height: 3px;
@@ -33,7 +33,7 @@ const InfoContainer = styled.div`
       }
       font-size: 20px;
       letter-spacing: 1px;
-      font-family: 'Titillium Web', 'Nanum Gothic Coding', sans-serif;
+      font-family: "Titillium Web", "Nanum Gothic Coding", sans-serif;
       margin-bottom: 5px;
     }
   }
@@ -70,7 +70,7 @@ const InfoContainer = styled.div`
 function Info() {
   return (
     <InfoContainer>
-      <h1>Informtaion</h1>
+      <h1>Information</h1>
       <div>
         <p>
           <b>이름</b>유승국
