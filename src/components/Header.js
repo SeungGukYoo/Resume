@@ -171,20 +171,10 @@ function Header() {
           <span className="profile">Profile</span>
           <p>
             ReactJS와 NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
-            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 보완하기 위해서 포기하지 않고 노력하고 있습니다.
+            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 보완하기 위해서 포기하지 않고 노력하고
+            있습니다.
             <br />
             새로운 것을 배우고, 문제를 해결하며 성장하고 싶은 개발자가 되고 싶습니다.
-            <br />
-            <span
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/18uiiP1MWALo1MEK5IehTkPB11mOwo3Cx/view?usp=share_link",
-                  "_blank"
-                )
-              }
-            >
-              자기소개서 다운로드
-            </span>
           </p>
         </InfoContainer>
       </div>
