@@ -190,7 +190,7 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p className="noneClick">Netflix 바로가기</p>
+          <p className="noneClick">Netflix</p>
         </div>
         <div>
           <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Netflix-wtih-Next13-Typescript")}>
