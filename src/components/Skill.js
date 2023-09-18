@@ -1,5 +1,44 @@
 import React from "react";
 import styled from "styled-components";
+function Skill() {
+  return (
+    <SkillContainer>
+      <h1>SKill</h1>
+      <SkillBox>
+        <div>
+          <h2>CSS</h2>
+          <ul>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>PostCSS</li>
+            <li>Styled-Components</li>
+            <li>TailwindCss</li>
+          </ul>
+        </div>
+        <div>
+          <h2>JavaScript</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>ReactJs</li>
+            <li>NextJs</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Etc</h2>
+          <ul>
+            <li>Npm</li>
+            <li>Yarn</li>
+            <li>Git</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </SkillBox>
+    </SkillContainer>
+  );
+}
+
+export default Skill;
 
 const SkillContainer = styled.div`
   background-color: rgb(250, 232, 216);
@@ -130,43 +169,3 @@ const SkillBox = styled.div`
     }
   }
 `;
-
-function Skill() {
-  return (
-    <SkillContainer>
-      <h1>SKill</h1>
-      <SkillBox>
-        <div>
-          <h2>CSS</h2>
-          <ul>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>PostCSS</li>
-            <li>Styled-Components</li>
-            <li>TailwindCss</li>
-          </ul>
-        </div>
-        <div>
-          <h2>JavaScript</h2>
-          <ul>
-            <li>JavaScript</li>
-            <li>ReactJs</li>
-            <li>NextJs</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Etc</h2>
-          <ul>
-            <li>Npm</li>
-            <li>Yarn</li>
-            <li>Git</li>
-            <li>Figma</li>
-          </ul>
-        </div>
-      </SkillBox>
-    </SkillContainer>
-  );
-}
-
-export default Skill;

@@ -1,6 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
+function Info() {
+  return (
+    <InfoContainer>
+      <h1>Information</h1>
+      <div>
+        <p>
+          <b>이름</b>유승국
+        </p>
+        <p>
+          <b>나이</b>26
+        </p>
+        <p>
+          <b>거주지</b>대전
+        </p>
+        <p>
+          <b>학력</b>한남대학교
+        </p>
+        <p>
+          <b>전공</b>컴퓨터공학과
+        </p>
+      </div>
+    </InfoContainer>
+  );
+}
+
+export default Info;
 const InfoContainer = styled.div`
   width: 100%;
   background-color: aliceblue;
@@ -66,30 +92,3 @@ const InfoContainer = styled.div`
     }
   }
 `;
-
-function Info() {
-  return (
-    <InfoContainer>
-      <h1>Information</h1>
-      <div>
-        <p>
-          <b>이름</b>유승국
-        </p>
-        <p>
-          <b>나이</b>26
-        </p>
-        <p>
-          <b>거주지</b>대전
-        </p>
-        <p>
-          <b>학력</b>한남대학교
-        </p>
-        <p>
-          <b>전공</b>컴퓨터공학과
-        </p>
-      </div>
-    </InfoContainer>
-  );
-}
-
-export default Info;

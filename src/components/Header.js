@@ -1,6 +1,46 @@
 import React from "react";
 import styled from "styled-components";
 
+function Header() {
+  return (
+    <HeaderContainer>
+      <div className="inner">
+        <ImgContainer>
+          <div>
+            <img src={`${process.env.PUBLIC_URL}/profile.jpeg`} alt="profile" />
+          </div>
+        </ImgContainer>
+        <InfoContainer>
+          <span className="nameStyle">저의 이름은</span>
+          <h1>유승국</h1>
+          <h2>Frontend Developer</h2>
+          <span className="profile">Profile</span>
+          <p>
+            ReactJS와 NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
+            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 보완하기 위해서 포기하지 않고 노력하고
+            있습니다.
+            <br />
+            새로운 것을 배우고, 문제를 해결하며 성장하고 싶은 개발자가 되고 싶습니다.
+          </p>
+          <span
+            className="pdfBdn"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1JKMRh5m3Xt48VMiccbNX9IkZtRfxU6KL/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            자기소개서 다운로드
+          </span>
+        </InfoContainer>
+      </div>
+    </HeaderContainer>
+  );
+}
+
+export default Header;
+
 const HeaderContainer = styled.header`
   width: 100%;
   margin-bottom: 30px;
@@ -111,24 +151,25 @@ const InfoContainer = styled.article`
     font-size: 16px;
     color: #666;
     line-height: 24px;
-
-    span {
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 10px;
-      color: black;
-      cursor: pointer;
-      transition: all 0.1s;
-      border: 1px solid rgb(59 130 246);
-      padding: 10px 24px;
-      transition: color 0.2s;
-      border-radius: 4px;
-      color: rgb(59 130 246);
-      transition: 0.15s;
-      &:hover {
-        background-color: rgb(29 78 216);
-        color: white;
-      }
+  }
+  span.pdfBdn {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: auto;
+    color: black;
+    cursor: pointer;
+    transition: all 0.1s;
+    border: 1px solid rgb(59 130 246);
+    padding: 10px 24px;
+    transition: color 0.2s;
+    border-radius: 4px;
+    color: rgb(59 130 246);
+    transition: 0.15s;
+    &:hover {
+      background-color: rgb(29 78 216);
+      color: white;
     }
   }
   @media screen and (max-width: 1200px) {
@@ -154,32 +195,3 @@ const InfoContainer = styled.article`
     }
   }
 `;
-
-function Header() {
-  return (
-    <HeaderContainer>
-      <div className="inner">
-        <ImgContainer>
-          <div>
-            <img src={`${process.env.PUBLIC_URL}/profile.jpeg`} alt="profile" />
-          </div>
-        </ImgContainer>
-        <InfoContainer>
-          <span className="nameStyle">저의 이름은</span>
-          <h1>유승국</h1>
-          <h2>Frontend Developer</h2>
-          <span className="profile">Profile</span>
-          <p>
-            ReactJS와 NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
-            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 보완하기 위해서 포기하지 않고 노력하고
-            있습니다.
-            <br />
-            새로운 것을 배우고, 문제를 해결하며 성장하고 싶은 개발자가 되고 싶습니다.
-          </p>
-        </InfoContainer>
-      </div>
-    </HeaderContainer>
-  );
-}
-
-export default Header;

@@ -1,6 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 
+function Contact() {
+  return (
+    <ContactContainer>
+      <h1>Contact</h1>
+      <div>
+        <h2>Phone</h2>
+        <p>010 2207 0878</p>
+      </div>
+      <div>
+        <h2>Email</h2>
+        <p>dbtmd878@naver.com</p>
+      </div>
+      <div>
+        <h2>Blog</h2>
+        <p onClick={() => window.open(" https://9uk-e.tistory.com/", "_blank")}>블로그 바로가기</p>
+      </div>
+      <div>
+        <h2>Notion</h2>
+        <p onClick={() => window.open("https://www.notion.so/8f5367843300462da66df8c5e0944d92", "_blank")}>
+          Notion 바로가기
+        </p>
+      </div>
+    </ContactContainer>
+  );
+}
+
+export default Contact;
+
 const ContactContainer = styled.div`
   background-color: rgb(249, 230, 231);
   padding: 40px 80px;
@@ -84,31 +112,3 @@ const ContactContainer = styled.div`
     }
   }
 `;
-
-function Contact() {
-  return (
-    <ContactContainer>
-      <h1>Contact</h1>
-      <div>
-        <h2>Phone</h2>
-        <p>010 2207 0878</p>
-      </div>
-      <div>
-        <h2>Email</h2>
-        <p>dbtmd878@naver.com</p>
-      </div>
-      <div>
-        <h2>Blog</h2>
-        <p onClick={() => window.open(" https://9uk-e.tistory.com/", "_blank")}>블로그 바로가기</p>
-      </div>
-      <div>
-        <h2>Notion</h2>
-        <p onClick={() => window.open("https://www.notion.so/8f5367843300462da66df8c5e0944d92", "_blank")}>
-          Notion 바로가기
-        </p>
-      </div>
-    </ContactContainer>
-  );
-}
-
-export default Contact;

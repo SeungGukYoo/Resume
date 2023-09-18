@@ -1,9 +1,26 @@
-import React from 'react';
-import Contact from './Contact';
-import Experience from './Experience';
-import Skill from './Skill';
-import styled from 'styled-components';
-import Info from './Info';
+import React from "react";
+import styled from "styled-components";
+import Contact from "./Contact";
+import Experience from "./Experience";
+import Info from "./Info";
+import Skill from "./Skill";
+
+function Body() {
+  return (
+    <BodyContainer>
+      <LeftArticle>
+        <Info />
+        <Contact />
+      </LeftArticle>
+      <RightArticle>
+        <Experience />
+        <Skill />
+      </RightArticle>
+    </BodyContainer>
+  );
+}
+
+export default Body;
 
 const BodyContainer = styled.section`
   display: flex;
@@ -36,20 +53,3 @@ const RightArticle = styled.article`
     padding-left: 0px;
   }
 `;
-
-function Body() {
-  return (
-    <BodyContainer>
-      <LeftArticle>
-        <Info />
-        <Contact />
-      </LeftArticle>
-      <RightArticle>
-        <Experience />
-        <Skill />
-      </RightArticle>
-    </BodyContainer>
-  );
-}
-
-export default Body;
