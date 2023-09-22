@@ -10,41 +10,22 @@ function Experience() {
       <h1>Experience</h1>
       <article>
         <div>
-          <p onClick={() => moveSite("https://wanted-pre-onboarding-frontend-topaz-theta.vercel.app/")}>
-            ToDo List 바로가기
+          <p onClick={() => moveSite("https://pre-onboarding-12th-4-16-jm2dbo5ul-seunggukyoo.vercel.app/")}>
+            서울 지역 차트 바로가기
           </p>
         </div>
         <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/wanted-pre-onboarding-frontend")}>
-            React와 Typescript를 사용한 ToDo List Git 저장소
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/pre-onboarding-12th-4-16")}>
+            React와 Typescript를 사용한 서울 지역 차트 Git 저장소
           </h2>
           <p>
             Wanted-pre-onboarding 인턴십에서 진행한 프로젝트입니다. <br />
-            React를 사용하였으며, 서버를 통해 데이터가 관리되는 ToDo List 입니다.
+            React와 Chart.js를 사용하여 제작되었습니다.
             <br />
-            서버는 wanted에서 제공되는 서버를 이용하였습니다. <br />
-            회원가입, 로그인, 리스트 페이지로 이루어져 있으며 토큰을 통해서 인증이 관리되고 있습니다.
+            막대 그래프와 영역 그래프를 기반으로 제공된 데이터의 구체적인 값을 확인할 수 있습니다.
             <br />
-          </p>
-        </div>
-      </article>
-      <article>
-        <div>
-          <p onClick={() => moveSite("http://wanted-aws-self-study.s3-website.ap-northeast-2.amazonaws.com/")}>
-            React Issues 바로가기
-          </p>
-        </div>
-        <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/pre-onboarding-2weeks")}>
-            React를 사용한 React Issues Git 저장소
-          </h2>
-          <p>
-            Wanted-pre-onboarding 인턴십에서 진행한 프로젝트입니다. <br />
-            React를 사용하여 React Issues를 보여주는 사이트입니다.
-            <br />
-            Issues의 마크다운을 remark를 사용하여 Html로 변환하여 보여지게 됩니다. <br />
-            XSS 공격을 막기위해 dangerouslySetInnerHTML을 통해 Html 파일을 표시해주게 됩니다. <br /> 디바운싱 기법을
-            이용한 무한 스크롤이 적용되어 있으며, 전역 상태 관리를 위해 리덕스 툴킷이 적용되어 있습니다.
+            지역 버튼을 클릭하거나 차트의 값을 클릭함으로 써 특정 그래프에 대한 데이터만 확인하거나 동일한 지역의
+            데이터만을 필터링할 수 있습니다.
             <br />
           </p>
         </div>
@@ -72,22 +53,41 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p onClick={() => moveSite("https://pre-onboarding-12th-4-16-jm2dbo5ul-seunggukyoo.vercel.app/")}>
-            서울 지역 차트 바로가기
+          <p onClick={() => moveSite("http://wanted-aws-self-study.s3-website.ap-northeast-2.amazonaws.com/")}>
+            React Issues 바로가기
           </p>
         </div>
         <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/pre-onboarding-12th-4-16")}>
-            React와 Typescript를 사용한 서울 지역 차트 Git 저장소
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/pre-onboarding-2weeks")}>
+            React를 사용한 React Issues Git 저장소
           </h2>
           <p>
             Wanted-pre-onboarding 인턴십에서 진행한 프로젝트입니다. <br />
-            React와 Chart.js를 사용하여 제작되었습니다.
+            React를 사용하여 React Issues를 보여주는 사이트입니다.
             <br />
-            막대 그래프와 영역 그래프를 기반으로 제공된 데이터의 구체적인 값을 확인할 수 있습니다.
+            Issues의 마크다운을 remark를 사용하여 Html로 변환하여 보여지게 됩니다. <br />
+            XSS 공격을 막기위해 dangerouslySetInnerHTML을 통해 Html 파일을 표시해주게 됩니다. <br /> 디바운싱 기법을
+            이용한 무한 스크롤이 적용되어 있으며, 전역 상태 관리를 위해 리덕스 툴킷이 적용되어 있습니다.
             <br />
-            지역 버튼을 클릭하거나 차트의 값을 클릭함으로 써 특정 그래프에 대한 데이터만 확인하거나 동일한 지역의
-            데이터만을 필터링할 수 있습니다.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <p onClick={() => moveSite("https://wanted-pre-onboarding-frontend-topaz-theta.vercel.app/")}>
+            ToDo List 바로가기
+          </p>
+        </div>
+        <div>
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/wanted-pre-onboarding-frontend")}>
+            React와 Typescript를 사용한 ToDo List Git 저장소
+          </h2>
+          <p>
+            Wanted-pre-onboarding 인턴십에서 진행한 프로젝트입니다. <br />
+            React를 사용하였으며, 서버를 통해 데이터가 관리되는 ToDo List 입니다.
+            <br />
+            서버는 wanted에서 제공되는 서버를 이용하였습니다. <br />
+            회원가입, 로그인, 리스트 페이지로 이루어져 있으며 토큰을 통해서 인증이 관리되고 있습니다.
             <br />
           </p>
         </div>
@@ -113,26 +113,11 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p onClick={() => moveSite("https://seunggukyoo.github.io/react_homepage/#/")}>vipp 바로가기</p>
-        </div>
-        <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/react_homepage")}>
-            React를 사용한 반응형 기업형 홈페이지 GIT 저장소
-          </h2>
-          <p>
-            리액트를 사용하여 제작한 반응형 기업형 홈페이지입니다. <br />
-            해당 프로젝트에서는 Youtube와 Flickr, Kakao API를 사용하여 콘텐츠를 구성하였으며, Redux-saga를 적용하여
-            데이터를 전역으로 관리한 프로젝트입니다. <br />
-          </p>
-        </div>
-      </article>
-      <article>
-        <div>
           <p className="noneClick">SPA Router 구현</p>
         </div>
         <div>
           <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/History-API-SPA-Router")}>
-            React와 History API를 사용한 SPA Router Git 바로가기
+            React와 History API를 사용한 SPA Router Git 저장소
           </h2>
           <p>
             React와 웹 브라우저에서 제공하는 History API로 제작해본 React-router 사이트입니다. React-router-dom의
@@ -142,20 +127,7 @@ function Experience() {
           </p>
         </div>
       </article>
-      <article>
-        <div>
-          <p onClick={() => moveSite("https://seunggukyoo.github.io/Clone_Company_Homepage/")}>Asan 바로가기</p>
-        </div>
-        <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Clone_Company_Homepage")}>
-            Javascript를 사용한 반응형 기업형 홈페이지 GIT 저장소
-          </h2>
-          <p>
-            Asan씨앤씨 홈페이지를 기업형 레이아웃에 맞게 약간 변형하여 제작하였습니다. <br />
-            반응형으로 제작하였으며, 웹 접근성을 신경써 가며 제작하였습니다.
-          </p>
-        </div>
-      </article>
+
       <article>
         <div>
           <p onClick={() => moveSite("https://chat-gpt-messenger-one.vercel.app")}>ChatGPT 바로가기</p>
@@ -169,6 +141,26 @@ function Experience() {
             Open AI를 사용하여 채팅창을 만들어보았으며, 여러 가지 AI모델을 선택하여 채팅방을 만들 수 있습니다. <br />
             NextAuth를 사용하여 로그인, 로그아웃을 구현하였으며, firebase를 사용하여 실시간 데이터를 저장하였기에
             언제든지 이전 채팅 내용을 확인할 수 있습니다.
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <p className="noneClick">Netflix</p>
+        </div>
+        <div>
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Netflix-wtih-Next13-Typescript")}>
+            NextJS와 Typescript를 사용한 Netflix GIT 저장소
+          </h2>
+          <p>
+            Typescript와 NextJS 13버전을 사용하여 제작한 Netflix 사이트입니다. <br />
+            Recoil을 사용하여 영화 데이터와 모달 상태를 전역으로 관리해 본 프로젝트입니다. <br />
+            firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다. <br />
+            <span className="caution">
+              2023년 5월 18일 보안 오류로 인하여 홈페이지에 들어가는 것이 불가능합니다.
+              <br /> Git에 들어가 다운로드하는 것을 권장 드립니다. 양해 부탁드립니다. <br />
+            </span>
           </p>
         </div>
       </article>
@@ -190,20 +182,30 @@ function Experience() {
       </article>
       <article>
         <div>
-          <p className="noneClick">Netflix</p>
+          <p onClick={() => moveSite("https://seunggukyoo.github.io/react_homepage/#/")}>vipp 바로가기</p>
         </div>
         <div>
-          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Netflix-wtih-Next13-Typescript")}>
-            NextJS와 Typescript를 사용한 Netflix GIT 저장소
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/react_homepage")}>
+            React를 사용한 반응형 기업형 홈페이지 GIT 저장소
           </h2>
           <p>
-            Typescript와 NextJS 13버전을 사용하여 제작한 Netflix 사이트입니다. <br />
-            Recoil을 사용하여 영화 데이터와 모달 상태를 전역으로 관리해 본 프로젝트입니다. <br />
-            firebase를 사용하여 회원가입, 로그인, 로그아웃 적용하였습니다. <br />
-            <span className="caution">
-              2023년 5월 18일 보안 오류로 인하여 홈페이지에 들어가는 것이 불가능합니다.
-              <br /> Git에 들어가 다운로드하는 것을 권장 드립니다. 양해 부탁드립니다. <br />
-            </span>
+            리액트를 사용하여 제작한 반응형 기업형 홈페이지입니다. <br />
+            해당 프로젝트에서는 Youtube와 Flickr, Kakao API를 사용하여 콘텐츠를 구성하였으며, Redux-saga를 적용하여
+            데이터를 전역으로 관리한 프로젝트입니다. <br />
+          </p>
+        </div>
+      </article>
+      <article>
+        <div>
+          <p onClick={() => moveSite("https://seunggukyoo.github.io/Clone_Company_Homepage/")}>Asan 바로가기</p>
+        </div>
+        <div>
+          <h2 onClick={() => moveSite("https://github.com/SeungGukYoo/Clone_Company_Homepage")}>
+            Javascript를 사용한 반응형 기업형 홈페이지 GIT 저장소
+          </h2>
+          <p>
+            Asan씨앤씨 홈페이지를 기업형 레이아웃에 맞게 약간 변형하여 제작하였습니다. <br />
+            반응형으로 제작하였으며, 웹 접근성을 신경써 가며 제작하였습니다.
           </p>
         </div>
       </article>

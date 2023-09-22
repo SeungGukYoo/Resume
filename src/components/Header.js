@@ -16,17 +16,19 @@ function Header() {
           <h2>Frontend Developer</h2>
           <span className="profile">Profile</span>
           <p>
-            ReactJS와 NextJS를 기반으로 한 신입 프론트엔드 개발자를 희망하는 유승국입니다. <br />
-            제 자신을 객관적으로 보려고 노력하며, 부족한 부분이 있다면 이를 보완하기 위해서 포기하지 않고 노력하고
-            있습니다.
+            안녕하세요! 프론트 엔드 개발자 유승국입니다. <br />
+            React와 Next.js를 주력으로 사용하고 있으며 다양한 것에 도전하고 도전하며 겪는 경험을 바탕으로 성장하는
+            개발자입니다.
             <br />
-            새로운 것을 배우고, 문제를 해결하며 성장하고 싶은 개발자가 되고 싶습니다.
+            저는 빠르게 변화하는 웹 트렌드를 따라가고자 배우는 것을 게을리 하지 않으며 필요한 기술이 있다면 빠르고
+            정확하게 배우도록 노력하고 있습니다. 개발외의 시간에는 여행(✈️)과 운동(🏸🎳)을 통해 리프레쉬를 하고
+            있습니다.
           </p>
           <span
             className="pdfBdn"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1JKMRh5m3Xt48VMiccbNX9IkZtRfxU6KL/view?usp=sharing",
+                "https://drive.google.com/file/d/11Y0nadkmWNEkeNznslv-CO93EJbGT3vs/view?usp=sharing",
                 "_blank"
               )
             }
